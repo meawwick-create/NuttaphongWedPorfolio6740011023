@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,7 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
 
   <body class="bg-white text-gray-800">
@@ -20,12 +21,12 @@
         </button>
 
         <ul class="hidden gap-6 text-sm md:flex">
-          <li><a href="#home" class="hover:text-blue-500">Home</a></li>
-          <li><a href="#exercise" class="hover:text-blue-500">Exercise</a></li>
-          <li><a href="#about" class="hover:text-blue-500">About</a></li>
-          <li><a href="#skills" class="hover:text-blue-500">Skills</a></li>
-          <li><a href="#work" class="hover:text-blue-500">Work</a></li>
-          <li><a href="#contact" class="hover:text-blue-500">Contact</a></li>
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#exercise" class="nav-link">Exercise</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </div>
 
@@ -33,12 +34,12 @@
         id="mobileMenu"
         class="hidden flex-col gap-4 border-t px-6 py-4 text-sm md:hidden"
       >
-        <li><a href="#home" class="block hover:text-blue-500">Home</a></li>
-        <li><a href="#exercise" class="block hover:text-blue-500">Exercise</a></li>
-        <li><a href="#about" class="block hover:text-blue-500">About</a></li>
-        <li><a href="#skills" class="block hover:text-blue-500">Skills</a></li>
-        <li><a href="#work" class="block hover:text-blue-500">Work</a></li>
-        <li><a href="#contact" class="block hover:text-blue-500">Contact</a></li>
+        <li><a href="#home" class="nav-link block">Home</a></li>
+        <li><a href="#exercise" class="nav-link block">Exercise</a></li>
+        <li><a href="#about" class="nav-link block">About</a></li>
+        <li><a href="#skills" class="nav-link block">Skills</a></li>
+        <li><a href="#work" class="nav-link block">Work</a></li>
+        <li><a href="#contact" class="nav-link block">Contact</a></li>
       </ul>
     </nav>
 
@@ -78,27 +79,43 @@
       </h3>
 
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <a href="1w.html" class="rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="text-xl font-bold">Exercise 1</h3>
-          <p class="mt-2 text-sm text-gray-500">สร้างหน้าโปรไฟล์พื้นฐานด้วย HTML</p>
+        <a
+          href="1w.html"
+          class="group rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-bold group-hover:text-blue-600">Exercise 1</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            สร้างหน้าโปรไฟล์พื้นฐานด้วย HTML
+          </p>
         </a>
 
-        <a href="w2.html" class="rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="text-xl font-bold">Exercise 2</h3>
+        <a
+          href="w2.html"
+          class="group rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-bold group-hover:text-blue-600">Exercise 2</h3>
           <p class="mt-2 text-sm text-gray-500">สร้างหน้าโปรไฟล์ส่วนตัวง่ายๆ</p>
         </a>
 
-        <a href="w3.html" class="rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="text-xl font-bold">Exercise 3</h3>
-          <p class="mt-2 text-sm text-gray-500">สร้างหน้าโปรไฟล์ผู้ใช้แบบง่าย</p>
+        <a
+          href="w3.html"
+          class="group rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-bold group-hover:text-blue-600">Exercise 3</h3>
+          <p class="mt-2 text-sm text-gray-500">
+            สร้างหน้าโปรไฟล์ผู้ใช้แบบง่าย
+          </p>
         </a>
 
-        <a href="w4.html" class="rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
-          <h3 class="text-xl font-bold">Exercise 4</h3>
+        <a
+          href="w4.html"
+          class="group rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          <h3 class="text-xl font-bold group-hover:text-blue-600">Exercise 4</h3>
           <p class="mt-2 text-sm text-gray-500">Product Listing Page</p>
         </a>
 
-       <a
+        <a
           href="w5.html"
           class="group rounded-xl border p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
         >
@@ -238,23 +255,88 @@
       </h3>
 
       <form class="mx-auto max-w-md space-y-4">
-        <input type="text" placeholder="Name" class="w-full rounded border p-2" />
-        <input type="email" placeholder="Email" class="w-full rounded border p-2" />
-        <textarea placeholder="Message" class="w-full rounded border p-2"></textarea>
-        <button class="w-full rounded bg-blue-600 py-2 text-white hover:bg-blue-700">
+        <input
+          type="text"
+          placeholder="Name"
+          class="w-full rounded border p-2"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-full rounded border p-2"
+        />
+        <textarea
+          placeholder="Message"
+          class="w-full rounded border p-2"
+        ></textarea>
+        <button
+          class="w-full rounded bg-blue-600 py-2 text-white hover:bg-blue-700"
+        >
           Send
         </button>
       </form>
     </section>
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const mobileMenu = document.getElementById("mobileMenu");
+  const navLinks = document.querySelectorAll(".nav-link");
+  const sections = document.querySelectorAll("section");
 
-    <script>
-      const menuBtn = document.getElementById("menuBtn");
-      const mobileMenu = document.getElementById("mobileMenu");
+  // Mobile menu
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
 
-      menuBtn.addEventListener("click", () => {
-        mobileMenu.classList.toggle("hidden");
-      });
-    </script>
-    
+  // Hover effect (เส้นใต้)
+  navLinks.forEach(link => {
+    link.classList.add(
+      "transition-all",
+      "duration-300",
+      "pb-1",
+      "border-b-2",
+      "border-transparent"
+    );
+
+    link.addEventListener("mouseenter", () => {
+      link.classList.add("border-blue-600");
+    });
+
+    link.addEventListener("mouseleave", () => {
+      if (!link.classList.contains("active")) {
+        link.classList.remove("border-blue-600");
+      }
+    });
+  });
+
+  // Active menu on scroll
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 120;
+      if (scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove(
+        "border-blue-600",
+        "text-blue-600",
+        "font-bold",
+        "active"
+      );
+
+      if (link.getAttribute("href") === `#${current}`) {
+        link.classList.add(
+          "border-blue-600",
+          "text-blue-600",
+          "font-bold",
+          "active"
+        );
+      }
+    });
+  });
+</script>
   </body>
 </html>
