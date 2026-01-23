@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+  <title>My Awesome Store</title>
+</head>
+
+<body>
+  <nav class="flex justify-between items-center px-10 py-5 sticky top-0 bg-white z-50 shadow-sm">
+  <h1 class="text-xl font-bold">Nuttaphong</h1>
+  <ul class="flex gap-6 text-sm">
+    <li><a href="#" data-scroll="home" class="hover:text-blue-500">Home</a></li>
+     <li><a href="#" data-scroll="exercise" class="hover:text-blue-500">Exercise</a></li>
+    <li><a href="#" data-scroll="about" class="hover:text-blue-500">About</a></li>
+    <li><a href="#" data-scroll="skills" class="hover:text-blue-500">Skills</a></li>
+    <li><a href="#" data-scroll="work" class="hover:text-blue-500">Work</a></li>
+    <li><a href="#" data-scroll="contact" class="hover:text-blue-500">Contact</a></li>
+   
+  </ul>
+</nav>
+  <p>
+    สิ่งที่โจทย์ต้องการ:<br>
+โครงสร้างหน้าเว็บ**: ใช้แท็ก HTML เชิงความหมาย (Semantic HTML) ให้เหมาะสม เช่น `header`, `nav`, `main`, `section`, `article`, `footer`
+ส่วนหัว (Header)**: มีชื่อร้านค้าหรือโลโก้ (เช่น "ร้านค้าของฉัน" หรือ "My Awesome Store") อยู่ในแท็ก `h1` และมีแถบนำทาง (Navigation Bar) ที่ประกอบด้วยลิงก์ 3-4 ลิงก์ไปยังหน้าต่างๆ เช่น "หน้าแรก", "สินค้า", "เกี่ยวกับเรา", "ติดต่อเรา" โดยใช้แท็ก `nav` และ `ul`/`li`/`a`
+ส่วนหลัก (Main Content)**: มีส่วนแสดงรายการสินค้า (product list) โดยใช้แท็ก `section` แต่ละสินค้า (product item) ควรแสดงอยู่ในแท็ก `article`
+องค์ประกอบของสินค้าแต่ละชิ้น**: ภายในแต่ละ `article` ต้องมีรูปภาพสินค้า (ใช้แท็ก `img` พร้อม `src` เป็น URL รูปภาพ placeholder เช่น `https://via.placeholder.com/200x150` และ `alt` attribute สำหรับคำอธิบายรูปภาพ), ชื่อสินค้า (ใช้แท็ก `h2` หรือ `h3`), คำอธิบายสั้นๆ (ใช้แท็ก `p`), ราคาสินค้า (ใช้แท็ก `p` เช่น "ราคา: ฿XXX.XX") และปุ่ม "เพิ่มลงตะกร้า" (ใช้แท็ก `button`)
+สร้างสินค้าอย่างน้อย 3 ชิ้น
+  </p>
+
+  <!-- ส่วนหัว -->
+  <header>
+    <h1>My Awesome Store</h1>
+
+    <!-- แถบนำทาง -->
+    <nav>
+      <ul>
+        <li><a href="#">หน้าแรก</a></li>
+        <li><a href="#">สินค้า</a></li>
+        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- เนื้อหาหลัก -->
+  <main>
+
+    <!-- ส่วนรายการสินค้า -->
+    <section>
+      <h2>รายการสินค้า</h2>
+
+      <!-- สินค้า 1 -->
+      <article>
+        <img src="https://via.placeholder.com/200x150" alt="เสื้อยืดสีขาว">
+        <h3>เสื้อยืดสีขาว</h3>
+        <p>เสื้อยืดผ้าคอตตอน ใส่สบาย เหมาะกับทุกวัน</p>
+        <p>ราคา: ฿199.00</p>
+        <button>เพิ่มลงตะกร้า</button>
+      </article>
+
+      <!-- สินค้า 2 -->
+      <article>
+        <img src="https://via.placeholder.com/200x150" alt="กางเกงยีนส์">
+        <h3>กางเกงยีนส์</h3>
+        <p>กางเกงยีนส์ทรงสวย ทนทาน ใส่ได้ทุกโอกาส</p>
+        <p>ราคา: ฿499.00</p>
+        <button>เพิ่มลงตะกร้า</button>
+      </article>
+
+      <!-- สินค้า 3 -->
+      <article>
+        <img src="https://via.placeholder.com/200x150" alt="รองเท้าผ้าใบ">
+        <h3>รองเท้าผ้าใบ</h3>
+        <p>รองเท้าผ้าใบดีไซน์เรียบ เหมาะกับการใช้งานประจำวัน</p>
+        <p>ราคา: ฿899.00</p>
+        <button>เพิ่มลงตะกร้า</button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- ส่วนท้าย -->
+  <footer>
+    <p>© 2026 My Awesome Store</p>
+  </footer>
+<div class="text-center md:text-left">
+    <a
+          href="https://github.com/meawwick-create/NuttaphongWedPorfolio2026/blob/main/w4.html"
+          class="mt-6 inline-block rounded-lg bg-blue-600 px-6 py-2 text-white hover:bg-blue-700"
+        >
+          ดูโค้ด
+        </a>
+         <a
+          href="index.html"
+          class="mt-6 inline-block rounded-lg bg-red-600 px-6 py-2 text-white hover:bg-red-700"
+        >
+          หน้าหลัก
+        </a>
+        </div>
+</body>
+</html>
